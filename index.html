@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cristiano Ronaldo - Inicio</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - Leyenda del Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="nav">
-  <div class="brand">Cristiano Ronaldo</div>
-  <nav class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="galeria.html">Galería</a>
-    <a href="blog.html">Blog</a>
-    <a href="cv.pdf">CV</a>
-  </nav>
-</header>
-
-<main class="container">
-  <h1>Cristiano Ronaldo</h1>
-  <p class="lead">Página dedicada al futbolista portugués.</p>
-
-  <div class="buttons">
-    <a class="btn" href="perfil.html">Perfil</a>
-    <a class="btn" href="galeria.html">Galería</a>
-    <a class="btn" href="blog.html">Blog</a>
-  </div>
-</main>
-
-<footer class="footer">Creado por Francisco Lombardo — 13 de November de 2025</footer>
+    <div class="container">
+        <header>
+            <h1>Cristiano Ronaldo</h1>
+            <p class="subtitle">Leyenda del Fútbol Mundial</p>
+        </header>
+        
+        <main>
+            <section class="buttons-section">
+                <h3>Navegación</h3>
+                <div class="button-container">
+                    <a href="perfil.html" class="animated-btn btn-1">
+                        <i class="fas fa-user"></i>
+                        Perfil Profesional
+                    </a>
+                    <a href="galeria.html" class="animated-btn btn-2">
+                        <i class="fas fa-images"></i>
+                        Galería de Imágenes
+                    </a>
+                    <a href="blog.html" class="animated-btn btn-3">
+                        <i class="fas fa-blog"></i>
+                        Blog Profesional
+                    </a>
+                    <a href="https://github.com/arielxh65-png/REPASO_PARCIAL_FRANCISCO_LOMBARDO/raw/main/CV%20PRUEBA.pdf" class="animated-btn btn-4" download>
+                        <i class="fas fa-download"></i>
+                        Descargar CV
+                    </a>
+                    <a href="info.html" class="animated-btn btn-5">
+                        <i class="fas fa-plus"></i>
+                        Ver Más
+                    </a>
+                </div>
+            </section>
+            
+            <section class="pages-description">
+                <h3>Contenido de las Páginas</h3>
+                <div class="page-info">
+                    <h4><i class="fas fa-user-tie"></i> Perfil Profesional</h4>
+                    <p>Conoce la trayectoria profesional, estadísticas y logros de Cristiano Ronaldo. Incluye su biografía, historial deportivo y records.</p>
+                </div>
+                <div class="page-info">
+                    <h4><i class="fas fa-camera"></i> Galería de Imágenes</h4>
+                    <p>Una colección visual de los momentos más destacados de su carrera, cada uno con animaciones únicas y descripciones interactivas.</p>
+                </div>
+                <div class="page-info">
+                    <h4><i class="fas fa-pen-fancy"></i> Blog Profesional</h4>
+                    <p>Información detallada sobre sus pasos profesionales, clubes y competencias con animaciones de desplazamiento suave.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 <strong>Cristiano Ronaldo</strong> - Leyenda del Fútbol</p>
+                <p id="fecha-actual"></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Actualizar fecha automáticamente
+        function actualizarFecha() {
+            const fecha = new Date();
+            const opciones = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                weekday: 'long'
+            };
+            document.getElementById('fecha-actual').textContent = 
+                fecha.toLocaleDateString('es-ES', opciones);
+        }
+        
+        document.addEventListener('DOMContentLoaded', actualizarFecha);
+    </script>
 </body>
 </html>
