@@ -1,69 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Galería - Cristiano Ronaldo</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="nav">
-  <div class="brand">Cristiano Ronaldo</div>
-  <nav class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="galeria.html">Galería</a>
-    <a href="blog.html">Blog</a>
-    <a href="cv.pdf">CV</a>
-  </nav>
-</header>
-
-<main class="container">
-  <h1>Galería de Imágenes</h1>
-  <p>Pasa el ratón sobre cada imagen para ver la descripción.</p>
-  <section class="gallery">
-    <figure class="gallery-item anim-1">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Cristiano_Ronaldo.jpg" alt="Cristiano Ronaldo 1">
-      <figcaption><strong>Fase 1</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ronaldo_2017.jpg" alt="Cristiano Ronaldo 2">
-      <figcaption><strong>Fase 2</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-3">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo 3">
-      <figcaption><strong>Fase 3</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-4">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo 4">
-      <figcaption><strong>Fase 4</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-5">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Cristiano_Ronaldo.jpg" alt="Cristiano Ronaldo 5">
-      <figcaption><strong>Fase 5</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ronaldo_2017.jpg" alt="Cristiano Ronaldo 6">
-      <figcaption><strong>Fase 6</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-7">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo 7">
-      <figcaption><strong>Fase 7</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    
-    <figure class="gallery-item anim-8">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo 8">
-      <figcaption><strong>Fase 8</strong><span class="hover-desc">Tarea: maquetar componente responsivo con estadísticas.</span></figcaption>
-    </figure>
-    </section>
-</main>
-
-<footer class="footer">Galería — 13 de November de 2025</footer>
+    <div class="container">
+        <header>
+            <h1>Galería de Imágenes</h1>
+            <div class="button-container">
+                <a href="index.html" class="animated-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="perfil.html" class="animated-btn">
+                    <i class="fas fa-user"></i> Perfil
+                </a>
+                <a href="blog.html" class="animated-btn">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="info.html" class="animated-btn">
+                    <i class="fas fa-plus"></i> Ver Más
+                </a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="gallery-intro">
+                <h2>Momentos Destacados de su Carrera</h2>
+                <p>Una selección de los momentos más icónicos de Cristiano Ronaldo, cada uno con su propia animación única.</p>
+            </section>
+            
+            <section class="gallery">
+                <div class="gallery-grid">
+                    <!-- Imagen 1 -->
+                    <div class="gallery-item animation-1">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1643208589881-87dc14b21f34?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Real Madrid">
+                        </div>
+                        <h3>Real Madrid</h3>
+                        <div class="description-overlay">
+                            <p>Etapa dorada en el Real Madrid donde ganó 4 Champions League y estableció récords goleadores históricos.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 2 -->
+                    <div class="gallery-item animation-2">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Juventus">
+                        </div>
+                        <h3>Juventus</h3>
+                        <div class="description-overlay">
+                            <p>Etapa en la Juventus donde demostró su calidad en la Serie A italiana ganando títulos nacionales.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 3 -->
+                    <div class="gallery-item animation-3">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Manchester United">
+                        </div>
+                        <h3>Manchester United</h3>
+                        <div class="description-overlay">
+                            <p>Primera etapa en el Manchester United donde se consagró como una estrella mundial y ganó la Champions League 2008.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 4 -->
+                    <div class="gallery-item animation-4">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Portugal">
+                        </div>
+                        <h3>Selección Portuguesa</h3>
+                        <div class="description-overlay">
+                            <p>Capitán de la selección de Portugal, con la que ganó la Eurocopa 2016 y la Nations League 2019.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 5 -->
+                    <div class="gallery-item animation-5">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Celebración">
+                        </div>
+                        <h3>Celebración Icónica</h3>
+                        <div class="description-overlay">
+                            <p>Su famosa celebración "Siuu" se ha convertido en un fenómeno mundial reconocido por aficionados de todo el mundo.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 6 -->
+                    <div class="gallery-item animation-6">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Balón de Oro">
+                        </div>
+                        <h3>Balones de Oro</h3>
+                        <div class="description-overlay">
+                            <p>Ha ganado 5 Balones de Oro, consolidándose como uno de los futbolistas más galardonados de la historia.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 7 -->
+                    <div class="gallery-item animation-7">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Entrenamiento">
+                        </div>
+                        <h3>Dedicación al Entrenamiento</h3>
+                        <div class="description-overlay">
+                            <p>Conocido por su increíble ética de trabajo y dedicación al entrenamiento, manteniéndose en la élite más de 20 años.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen 8 -->
+                    <div class="gallery-item animation-8">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0ea3ff8db41?w=400&h=300&fit=crop" alt="Cristiano Ronaldo Al-Nassr">
+                        </div>
+                        <h3>Al-Nassr</h3>
+                        <div class="description-overlay">
+                            <p>Nueva etapa en Arabia Saudita con el Al-Nassr, continuando su legado y expandiendo el fútbol en nuevas regiones.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
