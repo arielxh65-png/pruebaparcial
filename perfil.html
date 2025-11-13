@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Perfil - Cristiano Ronaldo</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="nav">
-  <div class="brand">Cristiano Ronaldo</div>
-  <nav class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="galeria.html">Galería</a>
-    <a href="blog.html">Blog</a>
-    <a href="cv.pdf">CV</a>
-  </nav>
-</header>
-
-<main class="container">
-  <h1>Perfil Profesional</h1>
-  <p>Cristiano Ronaldo dos Santos Aveiro — Delantero portugués, nacido en Funchal (1985).</p>
-
-  <h2>Trayectoria</h2>
-  <table class="career">
-    <thead><tr><th>Año</th><th>Club</th><th>Descripción</th></tr></thead>
-    <tbody>
-      <tr><td>2002–2003</td><td>Sporting CP</td><td>Debut profesional y formación en la cantera.</td></tr>
-      <tr><td>2003–2009</td><td>Manchester United</td><td>Consolidación y primeros grandes títulos.</td></tr>
-      <tr><td>2009–2018</td><td>Real Madrid</td><td>Etapa goleadora y múltiples Champions League.</td></tr>
-      <tr><td>2018–2021</td><td>Juventus</td><td>Éxitos en Italia y títulos domésticos.</td></tr>
-      <tr><td>2023–presente</td><td>Al-Nassr</td><td>Continuación de carrera profesional en Arabia Saudita.</td></tr>
-    </tbody>
-  </table>
-
-  <h2 id="contact">Contacto</h2>
-  <div class="socials">
-    <a class="social" href="https://www.instagram.com/cristiano" target="_blank">Instagram</a>
-    <a class="social" href="https://twitter.com/Cristiano" target="_blank">Twitter</a>
-    <a class="cv" href="cv.pdf" download>Descargar CV</a>
-  </div>
-</main>
-
-<footer class="footer">Temática: Cristiano Ronaldo — 13 de November de 2025</footer>
+    <div class="container">
+        <header>
+            <h1>Perfil Profesional</h1>
+            <div class="button-container">
+                <a href="index.html" class="animated-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="galeria.html" class="animated-btn">
+                    <i class="fas fa-images"></i> Galería
+                </a>
+                <a href="blog.html" class="animated-btn">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="info.html" class="animated-btn">
+                    <i class="fas fa-plus"></i> Ver Más
+                </a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="biografia">
+                <h2>Biografía</h2>
+                <div class="bio-content">
+                    <div class="bio-text">
+                        <p><strong>Cristiano Ronaldo dos Santos Aveiro</strong> es un futbolista portugués nacido el 5 de febrero de 1985 en Funchal, Madeira. Considerado uno de los mejores jugadores de todos los tiempos, ha ganado 5 Balones de Oro y 5 Champions League.</p>
+                        <p>Conocido por su dedicación, ética de trabajo y mentalidad ganadora, Ronaldo ha jugado en clubes como Sporting CP, Manchester United, Real Madrid, Juventus y Al-Nassr. Es el máximo goleador histórico de la selección portuguesa y de la Champions League.</p>
+                    </div>
+                    <div class="bio-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="carrera">
+                <h2>Trayectoria Profesional</h2>
+                <table class="career-table">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Club</th>
+                            <th>Logros Principales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2002-2003</td>
+                            <td>Sporting CP</td>
+                            <td>Debut profesional</td>
+                        </tr>
+                        <tr>
+                            <td>2003-2009</td>
+                            <td>Manchester United</td>
+                            <td>3 Premier League, 1 Champions League</td>
+                        </tr>
+                        <tr>
+                            <td>2009-2018</td>
+                            <td>Real Madrid</td>
+                            <td>4 Champions League, 2 La Liga</td>
+                        </tr>
+                        <tr>
+                            <td>2018-2021</td>
+                            <td>Juventus</td>
+                            <td>2 Serie A, 1 Copa Italia</td>
+                        </tr>
+                        <tr>
+                            <td>2021-2022</td>
+                            <td>Manchester United</td>
+                            <td>Regreso al club</td>
+                        </tr>
+                        <tr>
+                            <td>2023-Actual</td>
+                            <td>Al-Nassr</td>
+                            <td>Nuevo desafío en Arabia Saudita</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="contacto">
+                <h2>Redes Sociales & Información</h2>
+                <div class="contact-content">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/cristiano" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/Cristiano" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Cristiano" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="cv-download">
+                        <a href="https://github.com/arielxh65-png/REPASO_PARCIAL_FRANCISCO_LOMBARDO/raw/main/CV%20PRUEBA.pdf" class="cv-btn" download="CV_Cristiano_Ronaldo.pdf">
+                            <i class="fas fa-download"></i>
+                            Descargar Estadísticas (PDF)
+                        </a>
+                        <p class="cv-instruction">Descarga directa - Archivo PDF</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
