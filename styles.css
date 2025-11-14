@@ -117,30 +117,30 @@ h4 {
     transform: translateY(0);
 }
 
-/* Animaciones específicas para cada botón */
+/* Botón 1: Perfil (Mantenido igual - Pulse) */
 .btn-1:hover {
     background: linear-gradient(45deg, #ff6b6b, #ffa726);
     animation: pulse 1s infinite;
 }
 
+/* Botón 2: Galería (Cambio de colores - Amarillo, Azul, Verde) */
 .btn-2:hover {
-    background: linear-gradient(45deg, #4ecdc4, #44a08d);
-    animation: bounce 1s infinite;
+    animation: color-cycle 2s infinite;
 }
 
+/* Botón 3: Blog (Aumento de tamaño) */
 .btn-3:hover {
-    background: linear-gradient(45deg, #fd746c, #ff9068);
-    animation: shake 0.5s ease-in-out;
+    animation: scale-up 0.8s ease-in-out;
 }
 
+/* Botón 4: Descargar (Rotación rápida del texto) */
 .btn-4:hover {
-    background: linear-gradient(45deg, #8e44ad, #9b59b6);
-    animation: glow 1.5s ease-in-out infinite alternate;
+    animation: fast-rotate 0.3s linear infinite;
 }
 
+/* Botón 5: Ver Más (Rotación suave) */
 .btn-5:hover {
-    background: linear-gradient(45deg, #27ae60, #2ecc71);
-    animation: rotate 0.8s ease-in-out;
+    animation: smooth-rotate 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -148,25 +148,71 @@ h4 {
     50% { transform: translateY(-5px) scale(1.05); }
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(-5px); }
-    50% { transform: translateY(-10px); }
+@keyframes color-cycle {
+    0% {
+        background: linear-gradient(45deg, #ffd700, #ffed4e);
+        transform: translateY(-5px);
+    }
+    33% {
+        background: linear-gradient(45deg, #3498db, #2980b9);
+        transform: translateY(-5px);
+    }
+    66% {
+        background: linear-gradient(45deg, #27ae60, #2ecc71);
+        transform: translateY(-5px);
+    }
+    100% {
+        background: linear-gradient(45deg, #ffd700, #ffed4e);
+        transform: translateY(-5px);
+    }
 }
 
-@keyframes shake {
-    0%, 100% { transform: translateY(-5px) rotate(0deg); }
-    25% { transform: translateY(-5px) rotate(-5deg); }
-    75% { transform: translateY(-5px) rotate(5deg); }
+@keyframes scale-up {
+    0% {
+        transform: translateY(-5px) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.15);
+    }
+    100% {
+        transform: translateY(-5px) scale(1.1);
+    }
 }
 
-@keyframes glow {
-    0% { box-shadow: 0 8px 25px rgba(142, 68, 173, 0.3); }
-    100% { box-shadow: 0 8px 35px rgba(142, 68, 173, 0.6); }
+@keyframes fast-rotate {
+    0% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-5px) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(-5px) rotate(0deg);
+    }
 }
 
-@keyframes rotate {
-    0% { transform: translateY(-5px) rotate(0deg); }
-    100% { transform: translateY(-5px) rotate(360deg); }
+@keyframes smooth-rotate {
+    0% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-5px) rotate(-2deg);
+    }
+    100% {
+        transform: translateY(-5px) rotate(0deg);
+    }
 }
 
 /* Secciones de contenido */
@@ -659,4 +705,55 @@ footer {
         font-size: 0.9rem;
     }
     
-    .care
+    .career-table th, 
+    .career-table td {
+        padding: 12px 8px;
+    }
+    
+    .image-container {
+        height: 200px;
+    }
+    
+    .section-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .button-container {
+        gap: 10px;
+    }
+    
+    .animated-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-grid {
+        gap: 20px;
+    }
+    
+    .blog-section {
+        padding: 20px;
+    }
+    
+    .page-info {
+        padding: 20px;
+    }
+    
+    .section-image {
+        height: 180px;
+    }
+}
